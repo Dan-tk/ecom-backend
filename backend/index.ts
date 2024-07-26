@@ -16,7 +16,7 @@ import corsOptions from './config/corsOptions';
 
 
 dotenv.config();
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
 connectDB();
 
@@ -42,4 +42,4 @@ app.get("/api/config/paypal", (req, res) => {
 /* const __dirname = path.resolve();
 app.use("/uploads", express.static(path.join(__dirname + "/uploads"))); */
 
-app.listen(port, () => console.log(`Server running on port: ${port}`));
+app.listen(PORT, () => console.log(`Server running on port: ${PORT}`));
