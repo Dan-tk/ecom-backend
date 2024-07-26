@@ -17,6 +17,7 @@ import corsOptions from './config/corsOptions';
 
 dotenv.config();
 const PORT = process.env.PORT || 5000;
+console.log(process.env.PORT);
 
 connectDB();
 
